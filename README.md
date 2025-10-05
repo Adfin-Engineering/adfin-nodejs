@@ -5,7 +5,7 @@ A Node.js client library for the Adfin API with OAuth2 authentication support.
 ## Installation
 
 ```bash
-npm install adfin-nodejs
+npm i @adfin/nodejs
 ```
 
 ## Quick Start
