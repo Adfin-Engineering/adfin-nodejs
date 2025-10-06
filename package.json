@@ -1,20 +1,38 @@
 {
-  "name": "adfin-nodejs",
+  "name": "@adfin/nodejs",
   "version": "1.0.0",
   "description": "Adfin API client for Node.js",
-  "main": "index.js",
   "type": "module",
-  "engines": {"node": ">=18"},
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "import": "./index.js",
+      "default": "./index.js"
+    }
+  },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "test": "node --test"
   },
   "keywords": [
     "adfin",
-    "api"
+    "api",
+    "client",
+    "payments",
+    "fintech"
   ],
-  "author": "",
   "license": "MIT",
-  "dependencies": {
-    "node-fetch": "^3.3.2"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Adfin-Engineering/adfin-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Adfin-Engineering/adfin-nodejs/issues"
+  },
+  "homepage": "https://github.com/Adfin-Engineering/adfin-nodejs#readme",
+  "publishConfig": {
+    "access": "public"
   }
 }
